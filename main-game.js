@@ -1,9 +1,9 @@
-container = document.getElementById( 'player' );
-document.body.appendChild( container );
+
+document.body.appendChild( document.getElementById( 'player' ) );
 
 renderer = new THREE.WebGLRenderer();
 renderer.setSize( 600, 600 );
-container.appendChild( renderer.domElement );
+document.getElementById( 'player' ).appendChild( renderer.domElement );
 
 var scene	= new THREE.Scene();
 var camera	= new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.01, 1000);
