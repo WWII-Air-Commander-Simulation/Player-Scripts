@@ -2,7 +2,7 @@
 
 var container, camera, scene, renderer, mesh,
 
-    mouse = { x: 0, y: 0 },
+    
     objects = [],
     
     count = 0,
