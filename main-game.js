@@ -40,46 +40,20 @@ camera.position.y = 150;
 camera.position.z = 500;
 camera.lookAt( scene.position );
 
-mesh = new THREE.Mesh( 
-    new THREE.BoxGeometry( 200, 200, 200, 1, 1, 1 ), 
-    new THREE.MeshBasicMaterial( { color : 0xff0000, wireframe: true } 
-) );
-scene.add( mesh );
-objects.push( mesh );
+var geometry = new THREE.CylinderGeometry( 5, 5, 20, 32 );
+var material = new THREE.MeshBasicMaterial( {color: 0xffff00} );
+var cylinder = new THREE.Mesh( geometry, material );
+scene.add( cylinder );
 
-// find intersections
-var vector = new THREE.Vector3();
-var raycaster = new THREE.Raycaster();
+objects.push( cylinder );
 
-// mouse listener
-document.addEventListener( 'mousedown', function( event ) {
-    
-    // For the following method to work correctly, set the canvas position *static*; margin > 0 and padding > 0 are OK
-    mouse.x = ( ( event.clientX - renderer.domElement.offsetLeft ) / renderer.domElement.width ) * 2 - 1;
-    mouse.y = - ( ( event.clientY - renderer.domElement.offsetTop ) / renderer.domElement.height ) * 2 + 1;
-    
-    // For this alternate method, set the canvas position *fixed*; set top > 0, set left > 0; padding must be 0; margin > 0 is OK
-    //mouse.x = ( ( event.clientX - container.offsetLeft ) / container.clientWidth ) * 2 - 1;
-    //mouse.y = - ( ( event.clientY - container.offsetTop ) / container.clientHeight ) * 2 + 1;
 
-    vector.set( mouse.x, mouse.y, 0.5 );
-    vector.unproject( camera );
 
-    raycaster.set( camera.position, vector.sub( camera.position ).normalize() );
 
-    intersects = raycaster.intersectObjects( objects );
-
-    if ( intersects.length > 0 ) {
-        
-        info.innerHTML = 'INTERSECT Count: ' + ++count;
-        
-    }
-
-}, false );
 
 function render() {
 
-    mesh.rotation.y += 0.01;
+    cylinder.rotation.y += 0.01;
     
     renderer.render( scene, camera );
 
