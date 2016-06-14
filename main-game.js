@@ -1,4 +1,3 @@
-
 document.body.appendChild( document.getElementById( 'player' ) );
 
 renderer = new THREE.WebGLRenderer();
