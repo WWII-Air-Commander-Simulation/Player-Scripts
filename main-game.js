@@ -7,8 +7,8 @@ var container, camera, scene, renderer, mesh,
     
     count = 0,
 
-    CANVAS_WIDTH = 200,
-    CANVAS_HEIGHT = 200;
+    CANVAS_WIDTH = 600,
+    CANVAS_HEIGHT = 600;
 
 // info
 info = document.createElement( 'div' );
