@@ -1,6 +1,6 @@
 function planeType (displayName, healthPoints, maxSpeed, weight, wingspan, height, planeLength, gunTurrets, rpm, functionality, range, ceiling, bombDamage, gunDamage, bombPayload, ammoAmount){
 
-this.displayName = displayname;
+this.displayName = displayName;
 this.healthPoints = healthPoints;
 this.maxSpeed = maxSpeed;                  //Required to be in Feet Per Second
 this.weight = weight;                      //Required to be in Pounds (American)
