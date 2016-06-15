@@ -39,9 +39,7 @@ objects.push( cylinder );
 
 function render() {
 
-    cylinder.rotation.x += 0.05;
-    cylinder.rotation.y += 0.05;
-    cylinder.rotation.z += 0.05;
+    loopCode();
     
     renderer.render( scene, camera );
 
@@ -54,3 +52,31 @@ function render() {
     render();
 
 })();
+
+
+
+
+
+loopCode(){
+    
+    
+    
+}
+
+
+
+
+
+makePlane(wingspan, height, length, x, y, z, xRot, yRot, zRot){
+    
+    var geometry = new THREE.BoxGeometry( wingspan, height, length );
+    var material = new THREE.MeshBasicMaterial( {color: 0x00ff00} );
+    var cube = new THREE.Mesh( geometry, material );
+    scene.add( cube );
+    cube.position.x=x;
+    cube.position.y=y;
+    cube.position.z=z;
+    
+}
+
+makePlane(10,10,10,0,0,0)
