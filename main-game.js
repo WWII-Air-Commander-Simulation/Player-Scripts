@@ -8,7 +8,9 @@ var container, camera, scene, renderer, mesh,
     count = 0,
 
     CANVAS_WIDTH = 600,
-    CANVAS_HEIGHT = 600;
+    CANVAS_HEIGHT = 600,
+    
+    allObjects = [];
 
 
 
@@ -70,7 +72,10 @@ function makePlane(wingspan, height, length, x, y, z, xRot, yRot, zRot){
     cube.position.x=x;
     cube.position.y=y;
     cube.position.z=z;
+    allObjects.push(cube);
     
 }
 
 makePlane(10,10,10,0,0,0);
+makePlane(10,10,10,0,0,0);
+allObjects[1].position.y=20;
