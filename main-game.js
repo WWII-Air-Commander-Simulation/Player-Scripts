@@ -54,5 +54,3 @@ function render() {
     render();
 
 })();
-
-Status API Training Shop Blog About
