@@ -1,4 +1,4 @@
-function planeType (displayName, healthPoints, maxSpeed, weight, wingspan, height, planeLength, gunTurrets, rpm, functionality, range, bombDamage, gunDamage, bombPayload, ammoAmount){
+function planeType (displayName, healthPoints, maxSpeed, weight, wingspan, height, planeLength, gunTurrets, rpm, functionality, range, ceiling, bombDamage, gunDamage, bombPayload, ammoAmount){
 
 this.displayName = displayname;
 this.healthPoints = healthPoints;
@@ -11,6 +11,7 @@ this.gunTurrets = gunTurrets;              //Number of Turrets not Guns
 this.rpm = rpm;                            //Rounds per Minute
 this.functionality = functionality;        //"Fighter" or "Bomber"
 this.range = range;                        //In Feet
+this.ceiling = ceiling;                    //In Feet
 this.bombDamage = bombDamage;
 this.gunDamage = gunDamage;
 this.bombPayload = bombPayload;            //Amount of bombs
