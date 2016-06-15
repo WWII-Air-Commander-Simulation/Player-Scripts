@@ -82,4 +82,4 @@ function makePlane(wingspan, height, length, x, y, z, xRot, yRot, zRot){
 makePlane(10,10,10,0,0,0,0,0,0);
 makePlane(10,10,10,0,0,0,0,0,0);
 allObjects[1].position.y=20;
-allObjects[0].rotation.x=180;
+allObjects[0].rotation.x=45;
