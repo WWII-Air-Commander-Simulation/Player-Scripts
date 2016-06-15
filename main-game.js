@@ -72,10 +72,14 @@ function makePlane(wingspan, height, length, x, y, z, xRot, yRot, zRot){
     cube.position.x=x;
     cube.position.y=y;
     cube.position.z=z;
+    cube.rotation.x=xRot;
+    cube.rotation.y=yRot;
+    cube.rotation.z=zRot;
     allObjects.push(cube);
     
 }
 
-makePlane(10,10,10,0,0,0);
-makePlane(10,10,10,0,0,0);
+makePlane(10,10,10,0,0,0,0,0,0);
+makePlane(10,10,10,0,0,0,0,0,0);
 allObjects[1].position.y=20;
+allObjects[0].rotation.x=180;
