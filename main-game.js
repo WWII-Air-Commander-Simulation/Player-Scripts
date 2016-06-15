@@ -39,7 +39,7 @@ objects.push( cylinder );
 
 function render() {
 
-    cylinder.rotation.y += 0.01;
+    cylinder.rotation.z += 0.01;
     
     renderer.render( scene, camera );
 
