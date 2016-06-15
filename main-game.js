@@ -81,5 +81,5 @@ function makePlane(x, y, z, xRot, yRot, zRot, faction, type, squadron, wingOrGro
 }
 
 makePlane(0,0,0,0,0,0,"YOLO");
-makePlane(0,0,0,0,0,0"OLOY");
+makePlane(0,0,0,0,0,0,"OLOY");
 planes[1].position.y=20;
