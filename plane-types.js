@@ -1,4 +1,4 @@
-function planeType = (displayName, healthPoints, maxSpeed, weight, wingspan, height, planeLength, gunTurrets, rpm, functionality, range, bombDamage, gunDamage, bombPayload, ammoAmount){
+function planeType (displayName, healthPoints, maxSpeed, weight, wingspan, height, planeLength, gunTurrets, rpm, functionality, range, bombDamage, gunDamage, bombPayload, ammoAmount){
 
 this.displayName = displayname;
 this.healthPoints = healthPoints;
