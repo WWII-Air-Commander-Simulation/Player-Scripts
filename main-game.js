@@ -10,7 +10,7 @@ var container, camera, scene, renderer, mesh,
     CANVAS_WIDTH = 600,
     CANVAS_HEIGHT = 600,
     
-    allObjects = [];
+    planes = [];
 
 
 
@@ -75,12 +75,11 @@ function makePlane(wingspan, height, length, x, y, z, xRot, yRot, zRot, faction,
     cube.rotation.x=xRot;
     cube.rotation.y=yRot;
     cube.rotation.z=zRot;
-    allObjects.push(cube);
+    planes.push(cube);
     cube.userData = { Faction: faction, Type: type, Squadron: squadron, WingGroup: wingOrGroup, Health: healthPercentage, TrainingAndExperience: trainingAndExperience, Condition: condition };
     
 }
 
 makePlane(10,10,10,0,0,0,0,0,0);
 makePlane(10,10,10,0,0,0,0,0,0);
-allObjects[1].position.y=20;
-allObjects[0].rotation.x=45;
+planes[1].position.y=20;
