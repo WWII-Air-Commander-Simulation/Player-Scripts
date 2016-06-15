@@ -76,7 +76,7 @@ function makePlane(wingspan, height, length, x, y, z, xRot, yRot, zRot, faction,
     cube.rotation.y=yRot;
     cube.rotation.z=zRot;
     allObjects.push(cube);
-    cube.userData = { Faction: faction };
+    cube.userData = { Faction: faction, Type: type, Squadron: squadron, WingGroup: wingOrGroup, Health: healthPercentage, TrainingAndExperience: trainingAndExperience, Condition: condition };
     
 }
 
