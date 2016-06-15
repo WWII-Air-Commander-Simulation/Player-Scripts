@@ -19,5 +19,5 @@ this.ammoAmount = ammoAmount;              //Amount of bullets
 
 }
 
-
-var b17 = new planeType("B-17", 1234, 421, 33279, 35000, 103, 19, 74, 7, 600, "Bomber", 10560000, 1234, 1234, 4800, 3000)
+//                      name     HP speed weight  wng  ht  ln  tr rpm   func      range     ceil  bmDm gnDm   bmLd  ammo
+var b17 = new planeType("B-17", 1234, 421, 33279, 103, 19, 74, 7, 600, "Bomber", 10560000, 35000, 1234, 1234, 4800, 3000)
