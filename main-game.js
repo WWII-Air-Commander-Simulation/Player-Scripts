@@ -65,7 +65,7 @@ function loopCode(){
 
 function makePlane(x, y, z, xRot, yRot, zRot, faction, type, squadron, wingOrGroup, healthPercentage, trainingAndExperience, condition){
     
-    var geometry = new THREE.BoxGeometry( wingspan, height, length );
+    var geometry = new THREE.BoxGeometry( type.wingspan, type.height, type.planeLength );
     var material = new THREE.MeshBasicMaterial( {color: 0x00ff00} );
     var cube = new THREE.Mesh( geometry, material );
     scene.add( cube );
