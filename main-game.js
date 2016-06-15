@@ -63,7 +63,7 @@ function loopCode(){
 
 
 
-function makePlane(wingspan, height, length, x, y, z, xRot, yRot, zRot){
+function makePlane(wingspan, height, length, x, y, z, xRot, yRot, zRot, faction, type, squadron, wingOrGroup, healthPercentage, trainingAndExperience, condition){
     
     var geometry = new THREE.BoxGeometry( wingspan, height, length );
     var material = new THREE.MeshBasicMaterial( {color: 0x00ff00} );
@@ -76,6 +76,7 @@ function makePlane(wingspan, height, length, x, y, z, xRot, yRot, zRot){
     cube.rotation.y=yRot;
     cube.rotation.z=zRot;
     allObjects.push(cube);
+    cube.userData = { Faction: faction };
     
 }
 
