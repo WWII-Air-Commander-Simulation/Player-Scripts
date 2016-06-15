@@ -63,7 +63,7 @@ function loopCode(){
 
 
 
-function makePlane(wingspan, height, length, x, y, z, xRot, yRot, zRot, faction, type, squadron, wingOrGroup, healthPercentage, trainingAndExperience, condition){
+function makePlane(x, y, z, xRot, yRot, zRot, faction, type, squadron, wingOrGroup, healthPercentage, trainingAndExperience, condition){
     
     var geometry = new THREE.BoxGeometry( wingspan, height, length );
     var material = new THREE.MeshBasicMaterial( {color: 0x00ff00} );
@@ -80,6 +80,6 @@ function makePlane(wingspan, height, length, x, y, z, xRot, yRot, zRot, faction,
     
 }
 
-makePlane(10,10,10,0,0,0,0,0,0);
-makePlane(10,10,10,0,0,0,0,0,0);
+makePlane(0,0,0,0,0,0,"YOLO");
+makePlane(0,0,0,0,0,0"OLOY");
 planes[1].position.y=20;
