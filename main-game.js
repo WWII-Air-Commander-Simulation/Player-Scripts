@@ -79,4 +79,4 @@ makePlane(wingspan, height, length, x, y, z, xRot, yRot, zRot){
     
 }
 
-makePlane(10,10,10,0,0,0)
+makePlane(10,10,10,0,0,0);
