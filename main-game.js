@@ -55,7 +55,9 @@ function render() {
 
 function loopCode(){
     
-    
+    for (i = 0; i < planes.length; i++) { 
+    planes[i].rotation.y += 0.2;
+}
     
 }
 
