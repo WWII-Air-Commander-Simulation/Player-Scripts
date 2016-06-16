@@ -96,6 +96,7 @@ function updatePos(plane){
     
     if(plane.userData.Throttle<25){
         plane.userData.yAcel=(((plane.userData.Type.weight)/(plane.userData.Type.wingspan))/3)-plane.userData.yAcel/30
+        console.log(plane.userData.yAcel);
     }
     
 }
