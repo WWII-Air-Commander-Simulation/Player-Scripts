@@ -1,5 +1,3 @@
-// TEMPORARY TEST
-
 var container, camera, scene, renderer, mesh,
 
     
