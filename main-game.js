@@ -85,6 +85,7 @@ function makePlane(x, y, z, xRot, yRot, zRot, faction, type, squadron, wingOrGro
 makePlane(0,0,0,0,0,0,"YOLO",b17,5,"3rd Bomber Group",1,1.2,1);
 makePlane(0,0,0,0,0,0,"YOLO",b17,5,"3rd Bomber Group",1,1,1);
 planes[1].userData.Throttle=50;
+planes[1].position.y=50;
 
 
 
@@ -94,9 +95,6 @@ planes[1].userData.Throttle=50;
 
 function updatePos(plane){
     
-    if(plane.userData.Throttle<25){
-        plane.userData.yAcel=(((plane.userData.Type.weight)/(plane.userData.Type.wingspan))/3)-plane.userData.yAcel/30
-        console.log(plane.userData.yAcel);
-    }
+    //plane.userData.xAcel=
     
 }
